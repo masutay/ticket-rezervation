@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 20px;
+  }
+
+  .booking-header {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .booking-body{
+  visibility:hidden;
+  }
+  
+  .seat {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .seat-letter {
+    width: 30px;
+    height: 50px;
+  }
+
+  .info {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    margin-top: 50px;
+  }
+
+  .seat-selected {
+    color: #42b883;
+  }
+
+  .seat-reserved {
+    color: #ed9f25;
+  }
+
+  ul {
+    list-style: none;
+    display: block;
+    border-bottom: 2px solid #000000;
+  }
+
+  .choose-ticket-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fa-ticket {
+    transform: rotate(-45deg);
+  }
+
+  .count {
+    display: inline-flex;
+
+
+  }
+
+  .count-result {
+    font-weight: 400;
+    float: left;
+    display: block;
+    text-align: center;
+    height: 30px;
+    width: 50px;
+    border-color: black;
+    border-radius: 10px;
+    margin-top: 5px;
+
+  }
